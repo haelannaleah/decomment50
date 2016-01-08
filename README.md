@@ -1,2 +1,2 @@
 # decomment50
-intelligently decomments C and php files/
+intelligently decomments C and php files
