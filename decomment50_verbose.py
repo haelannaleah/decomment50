@@ -5,7 +5,7 @@
 # annaleahernst@college.harvard.edu
 #
 # intelligently strips a C or php file of comments
-# outputs a newly stripped file with the tag _uncommented at the end
+# outputs a newly stripped file with the tag _decommented at the end
 #
 # https://xkcd.com/208/
 
