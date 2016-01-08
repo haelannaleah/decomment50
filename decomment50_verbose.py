@@ -9,7 +9,8 @@
 #
 # https://xkcd.com/208/
 
-import re, sys
+import re
+from sys import argv
 
 def decomment50(in_fname, out_fname):
     # deals with strings vs comments
@@ -40,9 +41,9 @@ def decomment50(in_fname, out_fname):
         return 'Failed to open file.'
 
 # check user input
-if len(sys.argv) != 2 : 
+if len(argv) != 2 : 
     print("Usage: decomment50.py <filename>")
 else :
     # get output file name
-    dot = sys.argv[1].rfind('.')
-    print(decomment50(sys.argv[1],sys.argv[1][:dot] + "_decommented" + sys.argv[1][dot:]))
+    dot = argv[1].rfind('.')
+    print(decomment50(argv[1],argv[1][:dot] + "_decommented" + argv[1][dot:]))
