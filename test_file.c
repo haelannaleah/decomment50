@@ -1,12 +1,7 @@
-/**
- * compare-0.c
+/* Test file for decomment50
  *
- * David J. Malan
- * malan@harvard.edu
+ * Trying to be as nasty as possible
  *
- * Tries (and fails) to compare two strings.
- *
- * Demonstrates strings as pointers to arrays.
  */
 
 int main(void)
@@ -16,13 +11,17 @@ int main(void)
     
     // this is y
     char y = 'y'; // inline?
-    for (int i = 0; i<3; i++)
+    for (int i = 0; /*break things?*/ i<3; i++)
     {
         // what
-        int j = 5;
+        int j = 5;//this?
     }
     
     // this is z
     // this another comment
-    float z = 4.555;
+    float z =/* break more things? */ 4.555;/***/
+    
+    char* = "// Not a real comment";
+    char* = "/*also not a real comment */";
+    char = '"'; // "what about this?"
 }
