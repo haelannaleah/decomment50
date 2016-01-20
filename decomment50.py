@@ -1,15 +1,18 @@
 #!/usr/bin/python
 # decomment50.py
+# intelligently removes the comments from c files and php files
+# nested comments, strings, character literals, the lot
+# outputs a newly stripped file with the tag _decommented at the end
+# https://xkcd.com/208/
+#
+# Annaleah Ernst & Kareem Omar
+# CS50 jterm 2016
+# annaleahernst@college.harvard.edu
 #
 # by Annaleah Ernst and Kareem Omar, jterm 2016
 # annaleahernst@college.harvard.edu
 #
-# intelligently removes the comments from c files and php files
-# nested comments, strings, character literals, the lot
-#
 # amazingly, not less readable than a 45-line version (available upon request)
-#
-# https://xkcd.com/208/
 
 import re, sys
 def decomment(inn, outn):
